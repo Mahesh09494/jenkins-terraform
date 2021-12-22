@@ -10,7 +10,7 @@ variable "env" {
 
 resource "aws_s3_bucket" "maheshs3" {
     count = "${var.env == "true"? 1: 0}"
-    bucket = "maheshs3demo"
+    bucket = "mahesh215demo"
 }
 
 resource "aws_instance" "maheshawspoc"{
